@@ -22,6 +22,7 @@ app.config(function($routeProvider, $locationProvider) {
     controller: 'SignupController',
 });   
   });
+  
 
 		app.controller('HomeController', function($scope,$http){	function getMeows(){
 		$http.get('/meows').then(function(responce){
