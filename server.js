@@ -8,8 +8,7 @@ app.use(express.static('public'));
 var Meow = mongoose.model('Meow', {
  text: String()
   });
-  
-app.get('/meows',function(req,res,next){
+  app.get('/meows',function(req,res,next){
   Meow.find({}, function (err, meows){
     return res.json(meows);
   });
